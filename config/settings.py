@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'productos',
     'materiales',
+    'clientes',
     'recetas',
     'django_extensions',
 ]
