@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'productos',
     'proveedores',
     'materiales',
+    'produccion',
     'clientes',
     'recetas',
     'django_extensions',
