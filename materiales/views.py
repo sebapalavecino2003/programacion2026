@@ -18,5 +18,5 @@ class MaterialViewSet(viewsets.ModelViewSet):
     serializer_class = MaterialSerializer
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ["codigo", "nombre", "categoria__nombre"]
-    ordering_fields = ["id", "codigo", "nombre", "costo_referencia", "creado_en"]
+    ordering_fields = ["id", "codigo", "nombre", "costo_referencia"]
     ordering = ["nombre"]

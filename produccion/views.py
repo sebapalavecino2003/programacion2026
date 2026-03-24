@@ -21,6 +21,5 @@ class OrdenProduccionViewSet(viewsets.ModelViewSet):
         "estado",
         "fecha_inicio",
         "fecha_fin",
-        "creado_en",
     ]
-    ordering = ["-creado_en"]
+    ordering = ["-id"]

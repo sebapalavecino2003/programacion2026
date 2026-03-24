@@ -5,7 +5,7 @@ from .models import CategoriaMaterial, Material
 class CategoriaMaterialSerializer(serializers.ModelSerializer):
     class Meta:
         model = CategoriaMaterial
-        fields = ["id", "nombre", "descripcion"]
+        fields = ["id", "nombre"]
 
 
 class MaterialSerializer(serializers.ModelSerializer):
@@ -18,13 +18,10 @@ class MaterialSerializer(serializers.ModelSerializer):
             "id",
             "codigo",
             "nombre",
-            "descripcion",
             "categoria",
             "categoria_nombre",
             "unidad_medida",
             "unidad_medida_display",
             "costo_referencia",
             "activo",
-            "creado_en",
-            "actualizado_en",
         ]

@@ -10,8 +10,6 @@ class Receta(models.Model):
     nombre = models.CharField(max_length=150)
     descripcion = models.TextField(blank=True)
     activo = models.BooleanField(default=True)
-    creado_en = models.DateTimeField(auto_now_add=True)
-    actualizado_en = models.DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name = "Receta"

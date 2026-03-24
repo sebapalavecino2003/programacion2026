@@ -13,7 +13,7 @@ class RecetaViewSet(viewsets.ModelViewSet):
     queryset = Receta.objects.select_related('producto').prefetch_related('detalles__material').all()
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['nombre', 'producto__nombre', 'producto__codigo']
-    ordering_fields = ['id', 'nombre', 'creado_en']
+    ordering_fields = ['id', 'nombre']
     ordering = ['nombre']
 
     def get_serializer_class(self):

@@ -21,6 +21,5 @@ class ProveedorViewSet(viewsets.ModelViewSet):
         "codigo",
         "nombre",
         "ciudad",
-        "creado_en",
     ]
     ordering = ["nombre"]

@@ -24,12 +24,8 @@ class OrdenProduccionSerializer(serializers.ModelSerializer):
             "estado_display",
             "fecha_inicio",
             "fecha_fin",
-            "observaciones",
             "activo",
-            "creado_en",
-            "actualizado_en",
         ]
-        read_only_fields = ["creado_en", "actualizado_en"]
 
     def validate_producto(self, value):
         if not value.requiere_produccion:

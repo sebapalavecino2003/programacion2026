@@ -29,15 +29,12 @@ class OrdenProduccion(models.Model):
     )
     fecha_inicio = models.DateField(null=True, blank=True)
     fecha_fin = models.DateField(null=True, blank=True)
-    observaciones = models.TextField(blank=True)
     activo = models.BooleanField(default=True)
-    creado_en = models.DateTimeField(auto_now_add=True)
-    actualizado_en = models.DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name = "Orden de producción"
         verbose_name_plural = "Órdenes de producción"
-        ordering = ["-creado_en"]
+        ordering = ["-id"]
 
     def __str__(self):
         return f"{self.codigo} - {self.producto.nombre}"

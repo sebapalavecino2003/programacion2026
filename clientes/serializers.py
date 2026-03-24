@@ -21,9 +21,5 @@ class ClienteSerializer(serializers.ModelSerializer):
             "telefono",
             "direccion",
             "ciudad",
-            "observaciones",
             "activo",
-            "creado_en",
-            "actualizado_en",
         ]
-        read_only_fields = ["creado_en", "actualizado_en"]

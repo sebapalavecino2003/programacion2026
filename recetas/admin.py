@@ -9,7 +9,7 @@ class RecetaDetalleInline(admin.TabularInline):
 
 @admin.register(Receta)
 class RecetaAdmin(admin.ModelAdmin):
-    list_display = ('id', 'producto', 'nombre', 'activo', 'creado_en')
+    list_display = ('id', 'producto', 'nombre', 'activo')
     list_filter = ('activo',)
     search_fields = ('nombre', 'producto__nombre', 'producto__codigo')
     inlines = [RecetaDetalleInline]

@@ -53,10 +53,7 @@ class RecetaSerializer(serializers.ModelSerializer):
             'nombre',
             'descripcion',
             'activo',
-            'creado_en',
-            'actualizado_en',
         ]
-        read_only_fields = ['creado_en', 'actualizado_en']
 
     def validate_producto(self, value):
         if not value.requiere_produccion:
@@ -81,7 +78,5 @@ class RecetaConDetallesSerializer(serializers.ModelSerializer):
             'nombre',
             'descripcion',
             'activo',
-            'creado_en',
-            'actualizado_en',
             'detalles',
         ]

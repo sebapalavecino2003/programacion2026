@@ -18,5 +18,5 @@ class ProductoViewSet(viewsets.ModelViewSet):
     serializer_class = ProductoSerializer
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['codigo', 'nombre', 'categoria__nombre']
-    ordering_fields = ['id', 'codigo', 'nombre', 'precio_venta', 'creado_en']
+    ordering_fields = ['id', 'codigo', 'nombre', 'precio_venta']
     ordering = ['nombre']

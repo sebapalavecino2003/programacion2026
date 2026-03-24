@@ -22,6 +22,5 @@ class ClienteViewSet(viewsets.ModelViewSet):
         "nombre",
         "tipo_cliente",
         "ciudad",
-        "creado_en",
     ]
     ordering = ["nombre"]
